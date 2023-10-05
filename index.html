@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Teste PDI - 1 - 1 Coala</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <label id="toggleSidebar" for="sidebar-toggle" style="cursor: pointer">☰</label>
+      <h1>Coala PDI</h1>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <a href="index.html">Inicio</a>
+      <a href="portfolio-content.html">Portfolio</a>
+      <a href="#">Contato</a>
+      <a href="#">Sobre</a>
+    </div>
+
+    <div class="content" id="content">
+      <h2>Teste de PDI da Coala</h2>
+      <p>Conteúdo de teste para Coala saúde, utilizando puro HTML e CSS.</p>
+    </div>
+
+    <script>
+      const sidebar = document.getElementById('sidebar')
+      const content = document.getElementById('content')
+      const portfolioContent = document.getElementById('portfolio-content')
+      const toggleButton = document.getElementById('toggleSidebar')
+
+      toggleButton.addEventListener('click', () => {
+        sidebar.classList.toggle('open')
+        content.classList.toggle('open')
+        portfolioContent.classList.toggle('open')
+      })
+    </script>
+  </body>
+</html>

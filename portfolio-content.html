@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <label id="toggleSidebar" for="sidebar-toggle" style="cursor: pointer">☰</label>
+      <h1>Coala PDI</h1>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <a href="index.html">Inicio</a>
+      <a href="portfolio-content.html">Portfolio</a>
+      <a href="#">Contato</a>
+      <a href="#">Sobre</a>
+    </div>
+
+    <div class="content" id="content">
+      <h2>Portfolio</h2>
+      <div class="image-container">
+        <div class="image">
+          <img
+            src="https://static.itdg.com.br/images/1200-675/59e079217cc8af8291a8cb910d1d449f/318825-original.jpg"
+            alt="Pudim 1"
+          />
+        </div>
+        <div class="image">
+          <img
+            src="https://www.receitasnestle.com.br/sites/default/files/styles/recipe_detail_desktop/public/srh_recipes/9954f57d1ba0fc9a818b8bbf267e31ce.jpg?itok=O1S0J0AC"
+            alt="Pudim 2"
+          />
+        </div>
+      </div>
+      <div class="image-container">
+        <div class="image">
+          <img src="https://assets.unileversolutions.com/recipes-v2/236947.jpg" alt="Pudim 3" />
+        </div>
+        <div class="image">
+          <img
+            src="https://cdn.awsli.com.br/600x450/515/515184/produto/130913220/a10836db4d.jpg"
+            alt="Pudim 4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const sidebar = document.getElementById('sidebar')
+      const content = document.getElementById('content')
+      const portfolioContent = document.getElementById('portfolio-content')
+      const toggleButton = document.getElementById('toggleSidebar')
+
+      toggleButton.addEventListener('click', () => {
+        sidebar.classList.toggle('open')
+        content.classList.toggle('open')
+        portfolioContent.classList.toggle('open')
+      })
+    </script>
+  </body>
+</html>
