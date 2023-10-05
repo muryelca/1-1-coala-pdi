@@ -1,1 +1,5 @@
-# 1-1-coala-pdi
+Teste PDI para a empresa Coala.
+
+- Desenvolvimento pessoal
+- puro css e html
+- navbar e sidebar
